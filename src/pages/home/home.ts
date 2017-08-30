@@ -450,7 +450,7 @@ export class HomePage {
       {name: 'חוף אסתר', dept:'ריפוי בעיסוק', phone: '9652', cell: '0506267039'},
       {name: 'גוזין מונא', dept:'ריפוי בעיסוק', phone: '9652', cell: ''},
       {name: 'שמיר יעקב', dept:'מחשבים', phone: '9286', cell: ''},
-      {name: 'בקרמן )יקלציק( תמר', dept:'מחשבים', phone: '9376', cell: '0506267059'},
+      {name: 'בקרמן תמר', dept:'מחשבים', phone: '9376', cell: '0506267059'},
       {name: 'סמרה בלה', dept:'מחשבים', phone: '9339', cell: ''},
       {name: 'שניידרמן מרק', dept:'מחשבים', phone: '9688', cell: ''},
       {name: 'סטרין סמיון', dept:'מחשבים', phone: '4109', cell: ''},

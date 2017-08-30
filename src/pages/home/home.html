@@ -7,21 +7,31 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-    <ion-list>
-          <ion-item *ngFor="let item of items">
-              <ion-icon name="call" item-left></ion-icon>
-              <h2>{{item.name}}</h2>
-              <a *ngIf="item.phone!=''" ion-button color="secondary" href="tel://{{item.phone}}">{{item.phone}}</a>
-              <a *ngIf="item.cell!=''" ion-button color="primary" href="tel://{{item.cell}}">{{item.cell}}</a>
-              <p item-right>{{item.dept}}</p>
-              
-              
-            </ion-item> 
-            
-           
-    </ion-list>
-    
+    <ion-searchbar  (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-card *ngFor="let item of items" >
+
+      <ion-card-content style="padding: 5px;">
+        <ion-grid>
+          <ion-row>
+              <ion-col col-6>
+                  <ion-icon name="contact">
+                      <span style="color: grey;font-family: arial;"> {{item.dept}}</span>
+                    </ion-icon>
+                
+                    <h1 style="font-weight: bold; font-size: 1.5em;">{{item.name}}</h1>
+              </ion-col>
+              <ion-col col-6>
+                  <a block  *ngIf="item.phone!=''" ion-button color="secondary" href="tel://{{item.phone}}">{{item.phone}}</a>
+                 
+                  <a block *ngIf="item.cell!=''" ion-button color="primary" href="tel://{{item.cell}}">{{item.cell}}</a>        
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>
 
     
