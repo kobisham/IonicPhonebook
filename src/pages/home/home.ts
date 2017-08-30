@@ -1123,11 +1123,13 @@ export class HomePage {
      // Reset items back to all of the items
      this.initializeItems();
 
-     // search in name or dept
+     // search in name or dept ot phone t cell
     if (val && val.trim() != '') {
       this.items = this.items.filter((item) => {
         return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1 ||
-        item.dept.toLowerCase().indexOf(val.toLowerCase()) > -1
+        item.dept.toLowerCase().indexOf(val.toLowerCase()) > -1 || 
+        item.phone.toLowerCase().indexOf(val.toLowerCase()) > -1 || 
+        item.cell.toLowerCase().indexOf(val.toLowerCase()) > -1 
       );
       })
     }
